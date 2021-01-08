@@ -4,7 +4,7 @@ pipeline{
 		stage("Pull Latest Image"){
 			steps{
 			    //sh
-				bat "docker pull deepkandey/apitest"
+				bat "docker pull deepkandey/apitesting_practice"
 			}
 		}
 		stage("Run Test"){
