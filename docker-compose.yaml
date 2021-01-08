@@ -1,6 +1,6 @@
 version: "3"
 services:
- apitesting-odule:
-  image: deepkandey/selenium-docker:latest
+ apitesting-module:
+  image: deepkandey/apitesting_practice:latest
   volumes:
     - ./output/book-flight-module-result:/usr/share/APITesting_Practice/test-output
