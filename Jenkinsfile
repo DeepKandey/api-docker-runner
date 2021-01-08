@@ -16,7 +16,7 @@ pipeline{
 	}
 	post{
 		always{
-			archiveArtifacts artifacts: 'output/**'
+			archiveArtifacts artifacts: 'test-output/**'
 		    bat "rmdir /S /Q output"
 		}
 	}
