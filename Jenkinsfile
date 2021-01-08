@@ -10,14 +10,14 @@ pipeline{
 		stage("Run Test"){
 			steps{
 			    //sh
-				bat "docker run deepkandey/apitesting_practice"
+				bat "docker-compose up"
 			}
 		}
 	}
 	post{
 		always{
-			archiveArtifacts artifacts: 'test-output/**'
-		  //  bat "rmdir /S /Q test-output"
+			archiveArtifacts artifacts: 'output/**'
+		    bat "rmdir /S /Q output"
 		}
 	}
 }
